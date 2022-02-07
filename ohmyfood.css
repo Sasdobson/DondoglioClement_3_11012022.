@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Thin-webfont.eot');
+    src: url('Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Thin-webfont.woff2') format('woff2'),
+         url('Roboto-Thin-webfont.woff') format('woff'),
+         url('Roboto-Thin-webfont.ttf') format('truetype'),
+         url('Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#page
+{
+	font-family: roboto, serif;
+	margin: auto;
+	width: 99%;
+}
+#logofood
+{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#logo
+{
+	width: 200px;
+	align-items: center;
+	margin: auto;
+}
+#localisation
+{
+	display: flex;
+	justify-content: center;
+	border-top: 3px solid rgb(206, 206, 206);
+	background-color:rgb(233, 233, 233);
+}
+#logopin
+{
+	margin-top: 22px;
+	margin-right: 15px;
+}
+#section_1 h1
+{
+	font-size: 28px;
+	width: 80%;
+	margin: auto;
+}
+#section_1 p
+{
+	font-size: 19px;
+}
+#section_1
+{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+}
+#exploreur
+{
+	border-radius: 20px;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	background: linear-gradient( 176deg, #FF79DA, #9356DC);
+	color: white;
+	border: 0px ;
+	text-decoration: none;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
+}
+
+#section_1 h2
+{
+	text-align: left;
+}
+
+#fonctionnement ul
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 200px;
+	padding: 0px;
+	margin: auto;
+	align-items: center;
+}
+#fonctionnement li
+{
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.textblock
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid white;
+	box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.58);
+	border-radius: 20px;
+	padding: 12px 12px 12px 25px;
+}
+.texteliste
+{
+	margin: 0;
+}
+.number
+{
+	color: white;
+	position: relative;
+	left: 15px;
+	background-color: #9356DC;
+	padding: 2px;
+	border-radius: 100%;
+	width: 22px;
+	height: 22px;
+}
+
+main
+{
+	margin: auto;
+	text-align: center;
+}
+main h2
+{
+	text-align: left;
+}
+
+.new
+{
+	position: relative;
+	top: 50px;
+	right: -290px;
+	background-color: green;
+	width: 60px;
+	text-decoration: none;
+	color: grey;
+}
+.new:visited
+{
+	text-decoration: none;
+	color: grey;
+}
+.annonce
+{
+	height: 370px;
+	border: 1px solid black;
+}
+.foodimg img
+{
+	height: 220px;
+	width: 98%;
+	object-fit: cover;
+}
+.texte_annonce
+{
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+}

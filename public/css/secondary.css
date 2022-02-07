@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "robotoregular";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("Roboto-Bold-webfont.eot");
+  src: url("Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold-webfont.woff2") format("woff2"), url("Roboto-Bold-webfont.woff") format("woff"), url("Roboto-Bold-webfont.ttf") format("truetype"), url("Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf") format("truetype");
+}
+@keyframes chargement {
+  0% {
+    visibility: hidden;
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#page {
+  margin: auto;
+  font-family: "Roboto";
+  width: 99%;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 2%;
+}
+#head .back {
+  width: 50%;
+  font-size: 130%;
+  font-weight: 600;
+  color: black;
+  margin-left: 10px;
+}
+#head #logo {
+  margin-top: 5%;
+  height: 35px;
+}
+
+.restaurant_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h2 {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #99E2D0;
+  width: 50px;
+  margin-left: 5.6px;
+}
+
+.titre_restaurant {
+  font-family: "Shrikhand";
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  border-radius: 25px;
+  top: 230px;
+  background-color: #F2F2F2;
+}
+.titre_restaurant h1 {
+  margin-left: 10px;
+}
+
+.fa-heart {
+  font-size: 24px;
+  margin-right: 24px;
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+}
+
+.full {
+  text-decoration: none;
+}
+
+.full:hover .fa-heart-o,
+.full .fa-heart {
+  display: none;
+}
+
+.full:hover .fa-heart {
+  display: inline;
+}
+
+.fa-heart-o {
+  color: black;
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-family: "roboto";
+  background-color: #F2F2F2;
+  padding-bottom: 50px;
+}
+
+.menu {
+  box-shadow: 1px 3px 10px 2px #b6b5b5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  background-color: white;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80px;
+  padding-left: 10px;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plats h3 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plats p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto";
+}
+
+.hoverslide {
+  position: absolute;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99E2D0;
+  overflow: hidden;
+  display: hidden;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.hoverslide .check {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 30%;
+  font-size: 150%;
+}
+
+.menu:hover .hoverslide {
+  position: relative;
+  width: 100px;
+  left: 0;
+}
+
+.menu:hover .check {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.prix {
+  justify-content: flex-end;
+  height: 80px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+.prix p {
+  margin-top: 200%;
+}
+
+#commande {
+  padding: 13px;
+  background: linear-gradient(176deg, #FF79DA, #9356DC);
+  color: white;
+  border: 0px;
+  text-decoration: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
+  border-radius: 20px;
+  width: 45%;
+  margin: 50px auto 20px auto;
+  font-size: 120%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.774);
+  align-items: left;
+  padding-left: 10px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  padding: 0;
+  margin-left: 15px;
+  list-style-type: none;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer #application_name {
+  margin-top: 5px;
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 120%;
+  margin-left: 15px;
+}
+
+.blockfooter {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  width: 200px;
+  font-family: "roboto";
+  margin-left: 15px;
+}
+.blockfooter p {
+  margin: 0;
+}
+.blockfooter .iconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.blockfooter .texteiconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blockfooter .texteiconefooter a {
+  text-decoration: none;
+  color: white;
+}
+
+.animation1 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+.animation2 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+}
+
+.animation3 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 700ms;
+}
+
+.animation4 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
+
+.animation5 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1100ms;
+}
+
+.animation6 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1300ms;
+}
+
+.animation7 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1500ms;
+}
+
+.animation8 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1700ms;
+}
+
+.animation9 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1900ms;
+}
+
+.animation10 {
+  animation-name: chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1900ms;
+}
+
+@media screen and (min-width: 768px) {
+  #head {
+    justify-content: inherit;
+  }
+
+  main {
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .plats {
+    width: 600px;
+  }
+}
+
+/*# sourceMappingURL=secondary.css.map */

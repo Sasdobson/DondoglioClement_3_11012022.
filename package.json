@@ -1,0 +1,24 @@
+{
+  "name": "projet-3-opc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "sass2": "sass --watch ./sass/secondary.scss:./public/css/secondary.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasdobson/Projet-3-OPC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sasdobson/Projet-3-OPC/issues"
+  },
+  "homepage": "https://github.com/Sasdobson/Projet-3-OPC#readme",
+  "dependencies": {
+    "sass": "^1.48.0"
+  }
+}
