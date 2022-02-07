@@ -120,10 +120,11 @@ h2 {
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  padding-top: 50px;
   font-family: "roboto";
   background-color: #F2F2F2;
   padding-bottom: 50px;
+  margin-top: 0;
 }
 
 .menu {
@@ -364,10 +365,17 @@ footer #application_name {
 
   main {
     margin: auto;
-    margin-top: 50px;
-    width: 60%;
+    width: 100%;
   }
-
+  main h2 
+  {
+    margin: auto;
+    
+  }
+.menu 
+{
+  width: 50%;
+}
   .plats {
     width: 600px;
   }
