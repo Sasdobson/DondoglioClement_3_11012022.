@@ -221,6 +221,11 @@ main {
   font-size: 120%;
   text-align: center;
 }
+#commande:hover {
+  background: linear-gradient(176deg, #d9b0e9, #eb6deb);
+  color: whitesmoke;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+}
 
 footer {
   display: flex;
